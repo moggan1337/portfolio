@@ -1,0 +1,203 @@
+export const stats = [
+  { label: 'Repositories', value: '150+', icon: 'folder' },
+  { label: 'CI Passing', value: '100%', icon: 'check-circle' },
+  { label: 'Contributions', value: '10K+', icon: 'git-commit' },
+  { label: 'Stars Earned', value: '5K+', icon: 'star' },
+]
+
+export const categories = [
+  {
+    name: 'AI/ML',
+    icon: 'brain',
+    color: '#7C3AED',
+    description: 'Machine learning models, neural networks, and AI-powered applications',
+    count: 45,
+  },
+  {
+    name: 'DevOps',
+    icon: 'cloud',
+    color: '#10B981',
+    description: 'CI/CD pipelines, containerization, and infrastructure automation',
+    count: 38,
+  },
+  {
+    name: 'Databases',
+    icon: 'database',
+    color: '#F59E0B',
+    description: 'Database schemas, migrations, and optimization tools',
+    count: 22,
+  },
+  {
+    name: 'Web Dev',
+    icon: 'globe',
+    color: '#3B82F6',
+    description: 'Full-stack web applications and modern frontend frameworks',
+    count: 35,
+  },
+  {
+    name: 'CLI Tools',
+    icon: 'terminal',
+    color: '#EF4444',
+    description: 'Command-line utilities and developer productivity tools',
+    count: 15,
+  },
+  {
+    name: 'APIs',
+    icon: 'server',
+    color: '#EC4899',
+    description: 'RESTful APIs, GraphQL, and microservice architectures',
+    count: 18,
+  },
+]
+
+export const featuredProjects = [
+  {
+    name: 'neural-vision',
+    description: 'State-of-the-art computer vision model for real-time object detection with 98.5% accuracy',
+    stars: 2847,
+    language: 'Python',
+    languageColor: '#3572A5',
+    category: 'AI/ML',
+    url: 'https://github.com/moggan1337/neural-vision',
+    topics: ['computer-vision', 'deep-learning', 'pytorch', 'object-detection'],
+  },
+  {
+    name: 'cloud-deployer',
+    description: 'One-click Kubernetes deployment tool with multi-cloud support and auto-scaling',
+    stars: 1923,
+    language: 'Go',
+    languageColor: '#00ADD8',
+    category: 'DevOps',
+    url: 'https://github.com/moggan1337/cloud-deployer',
+    topics: ['kubernetes', 'docker', 'terraform', 'aws', 'gcp'],
+  },
+  {
+    name: 'query-master',
+    description: 'Advanced SQL query optimizer and analytics dashboard for PostgreSQL',
+    stars: 1567,
+    language: 'TypeScript',
+    languageColor: '#3178C6',
+    category: 'Databases',
+    url: 'https://github.com/moggan1337/query-master',
+    topics: ['postgresql', 'analytics', 'sql', 'dashboard'],
+  },
+  {
+    name: 'llm-finetuner',
+    description: 'Fine-tuning framework for large language models with RLHF support',
+    stars: 2341,
+    language: 'Python',
+    languageColor: '#3572A5',
+    category: 'AI/ML',
+    url: 'https://github.com/moggan1337/llm-finetuner',
+    topics: ['llm', 'nlp', 'transformers', 'rlhf'],
+  },
+  {
+    name: 'git-automation',
+    description: 'Smart Git workflows with automatic versioning, changelog generation, and releases',
+    stars: 1289,
+    language: 'TypeScript',
+    languageColor: '#3178C6',
+    category: 'CLI Tools',
+    url: 'https://github.com/moggan1337/git-automation',
+    topics: ['git', 'cli', 'automation', 'devops'],
+  },
+  {
+    name: 'api-gateway',
+    description: 'High-performance API gateway with rate limiting, auth, and caching',
+    stars: 1876,
+    language: 'Go',
+    languageColor: '#00ADD8',
+    category: 'APIs',
+    url: 'https://github.com/moggan1337/api-gateway',
+    topics: ['api-gateway', 'microservices', 'rate-limiting'],
+  },
+  {
+    name: 'react-dashboard',
+    description: 'Beautiful, responsive admin dashboard template with 50+ components',
+    stars: 3456,
+    language: 'TypeScript',
+    languageColor: '#3178C6',
+    category: 'Web Dev',
+    url: 'https://github.com/moggan1337/react-dashboard',
+    topics: ['react', 'dashboard', 'typescript', 'tailwind'],
+  },
+  {
+    name: 'data-pipeline',
+    description: 'Real-time data streaming pipeline with Apache Kafka and Spark',
+    stars: 987,
+    language: 'Scala',
+    languageColor: '#DC322F',
+    category: 'DevOps',
+    url: 'https://github.com/moggan1337/data-pipeline',
+    topics: ['kafka', 'spark', 'streaming', 'data-engineering'],
+  },
+  {
+    name: 'cache-pro',
+    description: 'Redis-based caching layer with automatic invalidation and distributed locking',
+    stars: 743,
+    language: 'Go',
+    languageColor: '#00ADD8',
+    category: 'Databases',
+    url: 'https://github.com/moggan1337/cache-pro',
+    topics: ['redis', 'caching', 'distributed-systems'],
+  },
+  {
+    name: 'nlp-toolkit',
+    description: 'Comprehensive NLP toolkit for text classification, sentiment analysis, and entity extraction',
+    stars: 2156,
+    language: 'Python',
+    languageColor: '#3572A5',
+    category: 'AI/ML',
+    url: 'https://github.com/moggan1337/nlp-toolkit',
+    topics: ['nlp', 'text-analysis', 'sentiment-analysis', 'nlu'],
+  },
+  {
+    name: 'next-saas',
+    description: 'Production-ready SaaS starter with auth, billing, and multi-tenancy',
+    stars: 2891,
+    language: 'TypeScript',
+    languageColor: '#3178C6',
+    category: 'Web Dev',
+    url: 'https://github.com/moggan1337/next-saas',
+    topics: ['nextjs', 'saas', 'stripe', 'auth'],
+  },
+  {
+    name: 'monitoring-stack',
+    description: 'Complete observability stack with Prometheus, Grafana, and custom alerts',
+    stars: 1124,
+    language: 'HCL',
+    languageColor: '#844FBA',
+    category: 'DevOps',
+    url: 'https://github.com/moggan1337/monitoring-stack',
+    topics: ['prometheus', 'grafana', 'observability', 'monitoring'],
+  },
+]
+
+export const skills = [
+  { name: 'TypeScript', level: 95, category: 'Frontend' },
+  { name: 'Python', level: 92, category: 'Backend' },
+  { name: 'Go', level: 88, category: 'Backend' },
+  { name: 'React/Next.js', level: 95, category: 'Frontend' },
+  { name: 'Node.js', level: 90, category: 'Backend' },
+  { name: 'PostgreSQL', level: 88, category: 'Database' },
+  { name: 'MongoDB', level: 85, category: 'Database' },
+  { name: 'Redis', level: 87, category: 'Database' },
+  { name: 'Docker/Kubernetes', level: 90, category: 'DevOps' },
+  { name: 'AWS/GCP', level: 85, category: 'DevOps' },
+  { name: 'TensorFlow/PyTorch', level: 88, category: 'AI/ML' },
+  { name: 'GraphQL', level: 82, category: 'API' },
+]
+
+export const socialLinks = [
+  { name: 'GitHub', url: 'https://github.com/moggan1337', icon: 'github' },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/moggan1337', icon: 'linkedin' },
+  { name: 'Twitter', url: 'https://twitter.com/moggan1337', icon: 'twitter' },
+  { name: 'Email', url: 'mailto:moggan1337@example.com', icon: 'mail' },
+]
+
+export const contributionData = Array.from({ length: 365 }, (_, i) => {
+  const date = new Date()
+  date.setDate(date.getDate() - (364 - i))
+  const contributions = Math.floor(Math.random() * 15)
+  return { date: date.toISOString().split('T')[0], count: contributions, level: contributions === 0 ? 0 : contributions < 3 ? 1 : contributions < 6 ? 2 : contributions < 10 ? 3 : 4 }
+})
