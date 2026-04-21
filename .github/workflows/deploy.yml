@@ -35,8 +35,10 @@ jobs:
       
       - name: Build
         run: npm run build
-        env:
-          CI: false
+      
+      - name: Fix asset paths
+        run: |
+          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's/\/_next\//\/portfolio\/_next\//g' {} \;
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
