@@ -38,7 +38,23 @@ jobs:
       
       - name: Fix asset paths
         run: |
-          find out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i 's/\/_next\//\/portfolio\/_next\//g' {} \;
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          function walk(dir) {
+            const files = fs.readdirSync(dir);
+            for (const file of files) {
+              const fullPath = path.join(dir, file);
+              if (fs.statSync(fullPath).isDirectory()) walk(fullPath);
+              else if (file.endsWith('.html') || file.endsWith('.js')) {
+                let c = fs.readFileSync(fullPath, 'utf8');
+                const m = c.replace(/\\/_next\\//g, '/portfolio/_next/');
+                if (m !== c) fs.writeFileSync(fullPath, m);
+              }
+            }
+          }
+          walk('out');
+          "
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
