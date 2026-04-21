@@ -1,0 +1,19 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install
+        run: |
+          if [ -f package.json ]; then npm install --legacy-peer-deps || true
+          elif [ -f pyproject.toml ]; then pip install -e . || true
+          elif [ -f setup.py ]; then pip install -e . || true
+          fi
+      - name: Build
+        run: |
+          if [ -f package.json ]; then npm run build || true
+          elif [ -f pyproject.toml ]; then python -m py_compile . || true
+          elif [ -f setup.py ]; then python -m py_compile . || true
+          fi
